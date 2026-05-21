@@ -1,6 +1,6 @@
 package homework21;
 
-public class Transformer {
+public abstract class Transformer {
     private String name;
 
     Transformer(String name) {
@@ -15,15 +15,6 @@ public class Transformer {
         this.name = name;
     }
 
-    void run() {
-        System.out.println(this.name + " бежит");
-    }
+    public abstract void transform();
 
-    void fire() {
-        System.out.println(this.name + " стреляет");
-    }
-
-    void charge() {
-        System.out.println(this.name + " заряжается");
-    }
 }
