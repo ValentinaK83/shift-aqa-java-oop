@@ -2,7 +2,7 @@ package homework21;
 
 public class Decepticon extends Transformer {
     private String teamName;
-    private static String eyeColor = "red";
+    private final String eyeColor = "red";
     private boolean kindness = false;
 
     public String getTeamName() {
@@ -13,13 +13,10 @@ public class Decepticon extends Transformer {
         this.teamName = teamName;
     }
 
-    public static String getEyeColor() {
+    public String getEyeColor() {
         return eyeColor;
     }
 
-    public static void setEyeColor(String eyeColor) {
-        Decepticon.eyeColor = eyeColor;
-    }
 
     public boolean isKindness() {
         return kindness;
