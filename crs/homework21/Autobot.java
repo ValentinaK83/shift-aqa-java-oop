@@ -2,6 +2,10 @@ package homework21;
 
 public class Autobot extends Transformer {
 
+    private String teamName;
+    private static String eyeColor = "blue";
+    private boolean kindness = true;
+
     public String getTeamName() {
         return teamName;
     }
@@ -9,8 +13,6 @@ public class Autobot extends Transformer {
     public void setTeamName(String teamName) {
         this.teamName = teamName;
     }
-
-    private String teamName;
 
     public static String getEyeColor() {
         return eyeColor;
@@ -20,18 +22,13 @@ public class Autobot extends Transformer {
         Autobot.eyeColor = eyeColor;
     }
 
-    private static String eyeColor = "blue";
-
-    public boolean isKindness() {
+     public boolean isKindness() {
         return kindness;
     }
 
     public void setKindness(boolean kindness) {
         this.kindness = kindness;
     }
-
-    private boolean kindness = true;
-
 
     Autobot(String name, String teamName, boolean kindness) {
         super(name);
