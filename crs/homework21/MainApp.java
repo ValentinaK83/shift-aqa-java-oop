@@ -1,5 +1,8 @@
 package homework21;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainApp {
     public static void main(String[] args) {
 
@@ -16,6 +19,12 @@ public class MainApp {
         decepticon.fire();
         decepticon.charge();
         decepticon.transform();
+
+        List<String> list = new ArrayList<>();
+        list.add("autobot");
+        list.add("decepticon");
+        System.out.println(list);
+
     }
 }
 

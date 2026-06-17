@@ -1,6 +1,6 @@
 package homework21;
 
-public class Autobot extends Transformer {
+public class Autobot extends Transformer implements Action {
 
     private String teamName;
     private final String eyeColor = "blue";
@@ -33,8 +33,24 @@ public class Autobot extends Transformer {
         this.kindness = kindness;
     }
 
-    void transform() {
+    @Override
+    public void run() {
+        System.out.println(getName() + " бежит");
+    }
+
+    @Override
+    public void fire() {
+        System.out.println(getName() + " стреляет");
+    }
+
+    @Override
+    public void charge() {
+        System.out.println(getName() + " заряжается");
+    }
+
+    public void transform() {
         System.out.println(getName() + " превращается в транспортное средство");
     }
+
 }
 
